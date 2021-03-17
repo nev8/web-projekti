@@ -101,6 +101,7 @@ Intro
 .intro{
     padding: var(--padding);
     text-align: center;
+    background: var(--gray);
 }
 .intro h2{
     font-size: 3rem;
@@ -138,3 +139,6 @@ Intro
     font-size: 1.1rm;
     line-height: 2; 
 }
+/*************
+Blog
+*************/
