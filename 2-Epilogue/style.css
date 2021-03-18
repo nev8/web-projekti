@@ -2,8 +2,50 @@
 :root{
     --fontFamily: 'Source Sans Pro', sans-serif;
     --logo: 'Pacifico', cursive;
+    --fontSize: 16px;
     
+}
+/***********
+Basic stzles
+***********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+/***********
+Header
+***********/
+header{
+background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(images/banner.jpg);
+background-position: center;
+background-size: cover;
+height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+header h1{
+    font-family: var(--logo);
+    font-size: 6rem;
+    color: white;
+}
+.underline{
+    width: 33%;
+    height: 2px;
+    background:white;
+    margin: 10px auto 50px auto;
+}
+header p{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: .7;
+    letter-spacing: 4px;
 }
