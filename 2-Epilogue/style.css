@@ -3,6 +3,7 @@
     --fontFamily: 'Source Sans Pro', sans-serif;
     --logo: 'Pacifico', cursive;
     --fontSize: 16px;
+    --bg: #f4f4f4;
     
 }
 /***********
@@ -16,6 +17,11 @@ Basic stzles
 body{
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
+    background: var(--bg);
+}
+.container{
+    width: 80%;
+    margin: auto;
 }
 /***********
 Header
