@@ -2,8 +2,13 @@
 :root{
     --fontFamily: 'Source Sans Pro', sans-serif;
     --logo: 'Pacifico', cursive;
-    --fontSize: 16px;
+    --fontSize: 18px;
     --bg: #f4f4f4;
+    --padding: 100px 0;
+    --headings: #444;
+    --text: #676767;
+    --red: #EF6480;
+    --transition: .3 ease;
     
 }
 /***********
@@ -18,10 +23,40 @@ body{
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
     background: var(--bg);
+    color: var(--text);
+    font-weight: 200;
+    line-height: 1.6;
 }
 .container{
     width: 80%;
     margin: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--headings);
+}
+h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 50px 0;
+}
+button{
+    border: 2px solid var(--headings);
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 30px;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+button:hover{
+    color: var(--red);
+    border: 2px solid var(--red);
+    transition: var(--transition);
 }
 /***********
 Header
@@ -54,4 +89,29 @@ header p{
     color: white;
     opacity: .7;
     letter-spacing: 4px;
+}
+/***********
+Intro
+***********/
+.intro{
+    padding: var(--padding);
+    background: white;
+    margin: 100px auto;
+    text-align: center;
+}
+.intro i{
+    border: 2px solid var(--text);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+    color: var(--text);
+    padding: 60px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+.intro p{
+    font-size: 1.4rem;
 }
