@@ -169,3 +169,26 @@ Footer
 footer{
     text-align: center;
 }
+footer p{
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+footer .underline {
+    width: 10%;
+    height: 2px;
+    background: var(--headings) ;
+    margin: 100px auto 100px auto;
+}
+footer .copy{
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+footer a{
+    font-size: 1.2rem;
+    color: var(--text);
+    margin: 0 10px;
+}
+footer a:hover{
+   color: var(--red); 
+   transition: var(--transition);
+}
