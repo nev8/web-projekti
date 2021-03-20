@@ -7,6 +7,15 @@
     --headings: #484848;
     --text: #666;
     --gray: #aaa;
+    --transition: .3s ease;
+}
+/***************
+Basic styles
+***************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: var(--fontFamily);
@@ -15,4 +24,85 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+a:hover{
+    transition: var(--transition);
+}
+button{
+    padding: 15px 40px;
+    background: var(--accents);
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+button:hover{
+    background: var(--hover);
+}
+/***************
+Headre
+***************/
+header{
+    background-image: linear-gradient(rgba(72,72,72,.7),rgba(72,72,72,.7)), url(images/banner.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 70px 0 70px;
+}
+.logo span{
+    font-weight: 700;
+}
+.logo{
+    font-size: 1.5rem;
+    color: white;
+}
+.logo:hover{
+    color: var(--accents);
+}
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header ul li a{
+    color: white;
+    opacity: .7;
+    margin-left:70px;
+    font-size: 1.2rem;
+}
+header ul li a:hover{  
+    color: white;
+    opacity: 1;
+}
+header ul{
+    display: flex;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-transform: uppercase;
+    text-align: center;
+}
+header div h1{
+     color: white;
+     font-size: 4rem;
+}
+header div p{
+    color: gray;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 50px 0;
 }
