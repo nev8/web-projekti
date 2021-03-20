@@ -126,7 +126,7 @@ Intro
 .intro article{
     flex: 0 0 45%;
 }
-.intro h4{
+.intro h4, .gallery h4{
     text-transform: uppercase;
     font-size: 1.7rem;
     color: var(--gray);
