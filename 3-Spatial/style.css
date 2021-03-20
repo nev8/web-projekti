@@ -8,6 +8,7 @@
     --text: #666;
     --gray: #aaa;
     --transition: .3s ease;
+    --py:100px 0;
 }
 /***************
 Basic styles
@@ -21,9 +22,12 @@ body{
     font-family: var(--fontFamily);
     font-weight: 400;
     font-size: var(--fontSize);
+    line-height: 1.6;
+    color: var(--text);
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
+    color: var(--headings);
 }
 ul{
     list-style: none;
@@ -46,8 +50,12 @@ button{
 button:hover{
     background: var(--hover);
 }
+h2{
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
 /***************
-Headre
+Header
 ***************/
 header{
     background-image: linear-gradient(rgba(72,72,72,.7),rgba(72,72,72,.7)), url(images/banner.jpg);
@@ -103,6 +111,31 @@ header div h1{
 header div p{
     color: gray;
     font-size: 1.8rem;
-    line-height: 1.5;
     padding: 50px 0;
+}
+/***************
+Intro
+***************/
+.intro{
+    padding: var(--py);
+    width: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.intro article{
+    flex: 0 0 45%;
+}
+.intro h4{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: var(--gray);
+    font-weight: 400;
+}
+.intro p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.intro p:first-child{
+    padding-bottom: 30px;
 }
