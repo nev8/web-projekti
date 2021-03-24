@@ -5,6 +5,8 @@
     --primary: #333;
     --lightgray: #fafafa;
     --borders: #eaeaea;
+    --fontSize: 16px;
+    --transitions: .3s ease;
 }
 /**************
 Basic styles
@@ -18,4 +20,76 @@ body{
     font-family: var(--fontFamily);
     color: var(--primary);
     background: var(--accents);
+    padding: 0 20px 100px 20px;
+    font-size: var(--fontSize);
 }
+.container{
+    width: 65%; 
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a:hover{
+    color: white;
+    transition: var(--transitions);
+}
+/**************
+Header
+**************/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}
+header article{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav{
+    background: var(--accents);
+    padding: 20px 0;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul li a{
+    color: white;
+    opacity: .6;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: white;
+    opacity: 1;
+}
+.logo{
+    background: rgba(0,0,0, .8);
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    font-size:3.3rem;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 30px;
+}
+.logo span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+header .icons a{
+    color:white;
+    font-size: 1.3rem;
+    margin-left: 30px;
+
+}
+
