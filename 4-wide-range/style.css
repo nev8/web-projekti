@@ -189,3 +189,48 @@ footer a{
 footer a:hover {
     text-decoration: none;
 }
+/**************
+Responsive
+**************/
+@media(max-width: 767px){
+    .container {
+        width: 90%;
+    }
+    header article {
+        flex-direction: column;
+    }
+    header .icons a {
+        margin: 10px;
+    }
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .services {
+       padding: 20px 0; 
+    }
+    .services div {
+        flex: 0 0 100%;
+    }
+    .services h3 {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .blog {
+        padding: 40px 0;
+    }
+    .blog h2 {
+        font-size: 2rem;
+    }
+    .blog .container div {
+        flex: 0 0 100%;
+        margin-top: 40px;
+    }
+    .blog .container div:first-child {
+        margin-top: 0;
+    }
+    footer p {
+        font-size: .6rem
+        ;
+    }
+}
