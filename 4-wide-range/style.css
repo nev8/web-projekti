@@ -121,4 +121,60 @@ Services
     font-size: 1.3rem;
     margin-bottom: 40px;
 }
+/**************
+Blog
+**************/
+.blog {
+    background-color: var(--lightgray);
+    padding: 100px 0;
+    border-top: 1px sold var(--borders);
+    text-align: center;
+}
+.blog .container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blog .container div {
+    flex: 0 0 23%;
+}
+.blog h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.blog h4 {
+    color: #4b4b4b;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.blog h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.blog p {
+    color: #929292;
+}
+button {
+    background: var(--accents);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: .8rem;
+    border: none;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background: var(--primary);
+    transition: var(--transitions);
+}
+
 
