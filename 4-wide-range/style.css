@@ -21,7 +21,7 @@ body{
     font-family: var(--fontFamily);
     color: var(--text);
     background: var(--accents);
-    padding: 0 20px 100px 20px;
+    padding: 0 20px 50px 20px;
     font-size: var(--fontSize);
     line-height: 1.6;
 }
@@ -176,5 +176,16 @@ button:hover{
     background: var(--primary);
     transition: var(--transitions);
 }
-
-
+/**************
+Footer
+**************/
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+footer a{
+    color: var(--primary);
+}
+footer a:hover {
+    text-decoration: none;
+}
