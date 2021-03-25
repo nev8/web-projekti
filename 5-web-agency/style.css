@@ -26,6 +26,11 @@ body {
 ul {
     list-style: none;
 }
+.container {
+    width: 80%;
+    margin: auto;
+    padding: var(--padding);
+}
 /***************
 Header
 ***************/
@@ -105,6 +110,37 @@ button:hover {
     color: var(--tamnoSiva);
     transition: var(--transition);
 }
-
-
+/***************
+About
+***************/
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.about article {
+    flex: 0 0 48%;
+}
+.about article:first-child {
+    text-align: left;
+    padding: 70px 0;
+}
+.about article:first-child h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--tamnoPlava);
+    margin-bottom: 15px;
+}
+.about article:first-child hr {
+    width: 15%;
+    margin-bottom: 15px;
+}
+.about article:first-child p {
+    letter-spacing: 1.3;
+    font-size: 1rem;
+}
+.about article:last-child img {
+    width: 100%;
+    border-bottom: 10px solid var(--tamnoPlava);
+    border-right: 10px solid var(--tamnoPlava);
+}
 
