@@ -224,3 +224,33 @@ Blog
     border-radius: 2px;
     cursor: pointer;
 }
+.blog article div button:hover {
+    color: var(--tamnoPlava);
+    background: var(--orange);
+    transition: var(--transition);
+}
+/***************
+Footer
+***************/
+footer {
+    background: linear-gradient(to right, rgb(124, 88, 71), rgb(69, 154, 211, .8)), url(img/baloon.jpg);
+    text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer div a {
+    color: var(--tamnoPlava);
+    font-size: 2rem;
+    margin: 0 10px 40px 10px;
+}
+footer div a:hover {
+    color: var(--svetloPlava);
+    transition: var(--transition);
+}
+footer p {
+    color: white;
+    padding-top: 20px;
+}
