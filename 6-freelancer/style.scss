@@ -8,3 +8,20 @@ $text: 'Lato', sans-serif;
 $transition: .3s ease;
 $fontSize: 16px;
 $white: #fff;
+/***************
+Basic styles
+****************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $text;
+    font-size: $fontSize;
+    color: $gray;
+    line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: $headings;
+}
